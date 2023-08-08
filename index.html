@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vientos - Tienda Online</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light shadow fixed-top">
+          <div class="container d-flex flex-row align-items-center">
+                  <a class="navbar-brand" href="#">
+                      <h1 class="d-none">Vientos</h1>
+                      <img src="img/brand_vientos2.png" alt="Logo de la marca vientos.">
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavBar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-md-end" id="miNavBar">
+                  <div class="navbar-nav menu p-3">
+                      <a class="nav-link" href="#">Inicio</a>
+                      <a class="nav-link" href="#tienda">Tienda</a>
+                  </div>
+              </div>
+              <div class="filtro d-flex flex-row justify-content-center">
+                <div class="modal-carrito d-flex align-items-center gap-4">
+                  <div class="info-carrito d-flex justify-content-center align-items-center gap-3"></div>
+                  <button id=carrito class="btn btn-header m-0">Ver carrito</button>
+                </div>
+              </div>
+          </div>
+      </nav>
+    </header>
+
+    <section id=tienda class="row d-flex bg-tienda">
+      <div class="catalogo-productos p-0">
+
+          <div class="col-7 m-auto text-center text-white">
+            <h2>Conocé nuestro catálogo</h2>
+            <p>Explora nuestra selección de instrumentos de viento de alta calidad para músicos de todos los niveles.<br> Encuentra el instrumento perfecto y lleva tu música al siguiente nivel.</p>
+          </div>
+
+          <div class="filtro col-12 d-flex justify-content-center p-4 gap-2">
+            <button class="btn btn-filter" id="trombones">Trombones</button>
+            <button class="btn btn-filter" id="trompetas">Trompetas</button>
+            <button class="btn btn-filter" id="flautas">Flautas</button>
+            <button class="btn btn-disabled" id="cancelFiltros">Quitar filtro</button>
+          </div>
+
+          <div class="contenedor-cards col-8 gap-4 m-auto d-flex flex-wrap"></div>
+      </div>
+    </section>
+  
+    <section class="row d-flex justify-content-center my-5">
+          <div class="card col-8 m-auto p-4 bg-section shadow">
+              <div class="row gap-5 d-flex justify-content-center align-items-center">
+                <div class="col-4 d-flex justify-content-start">
+                  <img class="img-fluid d-block img-section rounded-3 img-fluid rounded-start" src="img/trombonista.png" alt="Trombonista en festival">
+                </div>
+  
+                <div class="col-7">
+                  <h2 class="card-text">Comprometidos con tu éxito musical</h2>
+                  <div>
+                    <p>Queremos ayudarte en cada paso del camino ya sea que estés dando tus primeros pasos en el mundo de la música o seas un profesional experimentado.</p>
+                    <p>Te invitamos a explorar nuestro blog donde podrás encontrar una gran variedad de recursos. <em>Consejos, técnicas de estudio para mejorar tu dominio del instrumento, ejercicios de práctica, recomendaciones de estudios de grabación</em>, son solo algunos de los artículos que encontrarás en nuestro blog.</p>
+                    <p>¡Visitanos en nuestra <strong>sucursal de Villa Devoto</strong> o explora nuestro catálogo en línea y comenzá tu viaje musical!</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+
+
+  </main>
+  <script src="carrito.js"></script>
+  <script src="productos.js"></script>
+  <script src="producto.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
