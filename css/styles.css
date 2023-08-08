@@ -1,0 +1,244 @@
+*{
+  font-family: 'DM Sans', sans-serif;
+}
+
+.menu {
+  font-size: 1.2rem;
+}
+
+.info-carrito p{
+  margin: 0px;
+}
+
+.info-carrito img{
+  margin-right: -8px;
+}
+
+.btn.btn-header{
+  background-color: #6441A5;
+  color: white;
+}
+
+.btn.btn-header:hover{
+  background-color: #7358a5;
+  color: white;
+}
+
+#tienda{
+  margin-top: 90px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+#tienda h2{
+  font-size: 2.5rem;
+}
+
+.bg-tienda{
+  background: #6441A5; 
+  background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  
+  background: linear-gradient(to right, #2a0845, #6441A5);
+}
+
+.btn.btn-filter, .btn.btn-disabled:hover{
+  background-color: white;
+  border: 2px solid transparent;
+  color: #6441A5;
+}
+
+.btn.btn-filter:hover, .btn.btn-disabled{
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  border: 2px solid white;
+}
+
+span.badge.categoria{
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(103, 103, 103);
+  background-color: rgb(228, 228, 228);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+.card {
+  width: calc(33.33% - 32px);
+  padding: 0rem 1.2rem 1.5rem 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+div.card-body{
+  padding: 0px;
+}
+
+.card-title{
+  font-size: 25px;
+  }
+  
+.card-text{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6441A5;
+}
+
+.btn.btn-card{
+  background-color: #b5900c;
+  color: white;
+}
+
+.btn.btn-card:hover {
+  background-color: #c6a940;
+  color: white;
+}
+
+.btn.btn-card-disabled{
+  background-color: #b5900c00;
+  color: #b5900c;
+  margin-left: 10px;
+}
+
+.btn.btn-card-disabled:hover{
+  text-decoration: underline;
+  color: #6441A5;
+}
+
+.modal-body{
+  background-color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.modal-title{
+  font-size: 2rem;
+}
+
+.modal-descripcion{
+  font-size: 1.1rem;
+  margin-top: 1rem;
+
+}
+
+.modal-precio{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6441A5;
+}
+
+#modal1, #modal2, #modal3, #modal4{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.823);
+  z-index: 2000;
+}
+
+#modal1 .modal-body{
+  width: 1000px;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 150px;
+}
+
+#modal1 .modal-body img{
+  width: 40%;
+}
+
+#modal1 .cerrar, #modal2 .cerrar, #modal3.cerrar, #modal4 a.cerrar{
+  color: #8b8b8b;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div.bg-section{
+  background-color: #e1e1e1;
+  border: transparent;
+}
+
+em{
+  font-style: normal;
+}
+
+#modal2 .modal-body{
+  width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 90px;
+}
+
+
+div.producto-item{
+  font-size: 1.2rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+div.producto-item p{
+  margin: 1rem 0;
+}
+
+#modal2 button.btn.btn-header{
+  margin-right: 9px;
+}
+
+#modal2 .modal-body div+p{
+  margin-top: 1rem;
+  color: grey;
+  font-style: italic;
+}
+
+.modal-total{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#modal3 .modal-body{
+  width: 700px;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+
+#modal3 button:first-child{
+  margin-right: 9px;
+}
+
+#modal4 .modal-body{
+  width: 1000px;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+
+.info-banner p:nth-child(2){
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.info-banner p:nth-child(3){
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.info-banner img{
+  width: 50%;
+}
+
+
